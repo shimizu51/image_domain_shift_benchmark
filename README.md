@@ -18,8 +18,10 @@ for deploying reliable vision systems.
 ---
 
 ## Models
-- ResNet-50
-- Vision Transformer (ViT-B/16)
+- ResNet-18 (current baseline)
+- ResNet-50 (planned)
+- Vision Transformer (ViT-B/16) (planned)
+
 
 ---
 
@@ -46,3 +48,26 @@ models under realistic distribution shifts.
 ## Author
 Re  
 Undergraduate student, Department of Electrical and Electronic Engineering
+
+---
+
+## Current Status
+
+### Baseline Experiment (Clean Data)
+
+- Dataset: CIFAR-10
+- Model: ResNet-18
+- Training Epochs: 1
+- Batch Size: 128
+- Optimizer: Adam (lr=0.001)
+- Loss Function: Cross Entropy
+- Device: GPU (if available)
+
+### Result
+- Training Accuracy: **50.66%**
+- Training Loss: 535.739
+
+### Notes
+- This experiment serves as a minimal baseline before introducing distribution shifts.
+- Evaluation is currently performed on the training set only.
+- Test-time robustness under corrupted distributions will be analyzed next.
